@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Ordenar producto exitosamente desde SauceDemo" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-19T20:02:20" hostname="TELO31CBW" time="30.173">
+  <properties/>
+  <testcase name="Ordenar producto exitosamente" classname="Ordenar producto exitosamente desde SauceDemo" time="30.173"/>
+  <system-out><![CDATA[
+Esquema del escenario: Ordenar producto exitosamente            ?[90m# src/test/resources/features/ordenarProducto.feature:18?[0m
+  ?[32mDado ?[0m?[32m?[0m?[32m?[1m'<juan>'?[0m?[32m ingresa a la pagian de SauceDemo?[0m                ?[90m# co.com.saucedemo.stepDefinitions.InicioDeSesionStepDefinition.ingresaALaPagianDeSauceDemo(java.lang.String)?[0m
+  ?[32mCuando ?[0m?[32mingresa usuario ?[0m?[32m?[1m'standard_user'?[0m?[32m y clave ?[0m?[32m?[1m'secret_sauce'?[0m ?[90m# co.com.saucedemo.stepDefinitions.InicioDeSesionStepDefinition.ingresaUsuarioYClave(java.lang.String,java.lang.String)?[0m
+  ?[32mY ?[0m?[32magrega un producto al carrito de compras?[0m                    ?[90m# co.com.saucedemo.stepDefinitions.OrdenarProductoStepDefinitions.agregaUnProductoAlCarritoDeCompras()?[0m
+  ?[32mY ?[0m?[32mprocede a realizar la orden del producto?[0m                    ?[90m# co.com.saucedemo.stepDefinitions.OrdenarProductoStepDefinitions.procedeARealizarLaOrdenDelProducto(io.cucumber.datatable.DataTable)?[0m
+    | Juan | Perez | 533444 |
+  ?[32mEntonces ?[0m?[32mve en pantalla el mensaje ?[0m?[32m?[1m'THANK YOU FOR YOUR ORDER'?[0m ?[90m# co.com.saucedemo.stepDefinitions.OrdenarProductoStepDefinitions.veEnPantallaElMensaje(java.lang.String)?[0m
+]]></system-out>
+  <system-err><![CDATA[1658260955030	geckodriver	INFO	Listening on 127.0.0.1:52368
+1658260955466	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "" "--remote-debugging-port" "64193" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Home\\AppData\\Local\\Temp\\rust_mozprofileMTHSV1"
+1658260956104	Marionette	INFO	Marionette enabled
+1658260956115	Marionette	INFO	Listening on port 55779
+WebDriver BiDi listening on ws://localhost:64193
+Read port: 55779
+1658260956377	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Home\\AppData\\Local\\Temp\\rust_mozprofileMTHSV1\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64193/devtools/browser/bdaf3670-0a71-43d2-9b07-4447ec86eede
+jul. 19, 2022 3:02:39 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.saucedemo.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.saucedemo.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.saucedemo.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.saucedemo.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1658260968711	Marionette	INFO	Stopped listening on port 55779
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
+]]></system-err>
+</testsuite>
